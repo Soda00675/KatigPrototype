@@ -1,0 +1,84 @@
+/* Global styles */
+body, html {
+  max-width: 400px;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #8e2de2, #4a00e0);
+  border-radius: 5px;
+}
+
+/* Dashboard layout */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  padding: 20px;
+  background: linear-gradient(to bottom, #8e2de2, #4a00e0);
+  border-radius: 5px;
+}
+
+/* Weather update section */
+.weather-update {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.2em; 
+  color: #333;
+  background-color: #ffd700;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 8px;
+}
+
+/* Tiles section */
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); 
+  gap: 10px; 
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Individual tiles with colors */
+.tile {
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff; 
+}
+
+/* Tile background colors */
+.tile.booking { background-color: #4caf50; }
+.tile.tracking { background-color: #2196f3; } 
+.tile.safety { background-color: #f44336; }
+.tile.feedback { background-color: #ff9800; } 
+
+
+/* Tile background colors */
+.tile.booking {
+  background-color: #4caf50; 
+}
+
+.tile.tracking {
+  background-color: #2196f3; 
+}
+
+.tile.safety {
+  background-color: #f44336; 
+}
+
+.tile.feedback {
+  background-color: #ff9800; 
+}
+
+
+
+@media (min-width: 600px) {
+  .tiles {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
