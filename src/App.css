@@ -17,19 +17,29 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.link-button {
+  display: inline-block;
+  height: 25px;
+  width: 60px;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #4a00e0; /* Purple background */
+  color: #ffffff; /* White text */
+  text-align: center;
+  text-decoration: none; /* Remove underline from links */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+.link-button:hover {
+  background-color: #6a00ff; /* Lighter purple on hover */
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 480px) {
+  .link-button {
+    padding: 15px 30px; /* Larger padding for mobile touch targets */
+    margin: 10px 0; /* More space between buttons on mobile */
   }
 }
 

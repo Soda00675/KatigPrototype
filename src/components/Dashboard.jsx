@@ -20,7 +20,7 @@ const Dashboard = () => {
   };
 
   const handleFeedbackClick = () => {
-    navigate('/feedback'); 
+    navigate('/home'); 
   };
 
   const handleRestaurantClick = (island) => {

@@ -1,8 +1,8 @@
 /* Form.css */
 .container {
-  max-width: 400px;
+  width: 300px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
   background-color: #8a8af8; /* White background */
   border-radius: 10px;
 }
@@ -50,11 +50,24 @@ input, button {
   border: none;
 }
 
-button[type="submit"] {
-  background-color: #000000; /* Black button */
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  background-color: #4a00e0; /* Vibrant purple background */
   color: #ffffff; /* White text */
+  font-size: 16px; /* Larger font size */
+  font-weight: bold; /* Bold font weight */
   cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
 }
+
+.button:hover {
+  background-color: #6a00ff; /* Slightly lighter purple on hover */
+}
+
+/* Add this class to your 'Register' and 'Login' buttons in the JSX */
+
 
 /* Updated styles for the form container */
 .form-container {
@@ -62,7 +75,7 @@ button[type="submit"] {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   color: #ffffff; /* White text */
-  padding: 40px;
+  padding: 10px;
   margin: auto; /* Center the form */
   width: 90%; /* Responsive width */
 }
@@ -91,14 +104,14 @@ a {
 }
 
 /* Responsive design */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 430px) {
   .container {
     max-width: 100%;
-    padding: 10px;
+    padding: 20px;
   }
 
   .form-container {
-    width: 100%; /* Full width on small screens */
+    width: 100%;
     padding: 20px; /* Adjust padding */
   }
 
