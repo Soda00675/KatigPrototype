@@ -8,7 +8,7 @@ const Dashboard = () => {
 
   // Click handlers
   const handleBookingClick = () => {
-    navigate('/booking'); 
+    navigate('/Booking'); 
   };
 
   const handleTrackingClick = () => {
@@ -16,15 +16,11 @@ const Dashboard = () => {
   };
 
   const handleSafetyClick = () => {
-    navigate('/safety'); 
+    navigate('/EmergencyContact'); 
   };
 
   const handleFeedbackClick = () => {
     navigate('/home'); 
-  };
-
-  const handleRestaurantClick = (island) => {
-    navigate(`/restaurants/${island}`); 
   };
 
 return (

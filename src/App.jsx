@@ -6,6 +6,10 @@ import LoginForm from './components/LoginForm';
 import Dashboard from './components/Dashboard';
 import Home from './components/home';
 import Feedback from './components/feedback';
+import BookingList from './components/BookingList';
+import BookingForm from './components/BookingForm';
+import BookingDetail from './components/BookingDetail';
+import EmergencyContact from './components/EmergencyContacts';
 import './App.css';
 
 function App() {
@@ -43,6 +47,10 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/home" element={<Home />} />
           <Route path="/feedback/*" element={<Feedback />} />
+          <Route path="/booking" element={<BookingList />} />
+        <Route path="/booking/new" element={<BookingForm mode="create" />} />
+        <Route path="/booking/:id" element={<BookingDetail />} />
+        <Route path="/EmergencyContact" element={<EmergencyContact />} />
           {/* ... other routes ... */}
         </Routes>
       </div>

@@ -1,4 +1,3 @@
-// Signup.jsx
 import React from 'react';
 import axios from 'axios';
 import { Form, Input, Button, message } from 'antd';
@@ -25,7 +24,11 @@ const Signup = () => {
       message.success('Signup successful!');
       navigate('/dashboard');
     } catch (error) {
-      message.error('Signup failed. Please try again.');
+      if (error.response && error.response.data) {
+        message.error(error.response.data.message);
+      } else {
+        message.error('Signup failed. Please try again.');
+      }
       console.error('Signup error:', error);
     }
   };
